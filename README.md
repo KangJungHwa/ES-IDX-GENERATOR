@@ -23,8 +23,8 @@ PUT /cat_tab_mas
 ```json
 {
   "settings": {
-    "max_ngram_diff": 500,
-    "number_of_shards": 3,
+    "max_ngram_diff": 50,
+    "number_of_shards": 1,
     "number_of_replicas": 1,
     "index": {
       "analysis": {
@@ -38,7 +38,7 @@ PUT /cat_tab_mas
           "my_ngram": {
             "type": "ngram",
             "min_gram": 2,
-            "max_gram": 500,
+            "max_gram": 50,
             "token_chars": [
               "letter",
               "digit"
