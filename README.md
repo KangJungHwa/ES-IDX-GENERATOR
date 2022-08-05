@@ -23,9 +23,9 @@ PUT /cat_tab_mas
 ```json
 {
   "settings": {
-    "max_ngram_diff": 50,
+    "max_ngram_diff": 500,
     "number_of_shards": 3,
-    "number_of_replicas": 3,
+    "number_of_replicas": 1,
     "index": {
       "analysis": {
         "analyzer": {
